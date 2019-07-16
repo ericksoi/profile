@@ -1,0 +1,38 @@
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+    background:url('/static/img/back.jpg');
+    color: white;
+
+  }
+
+  .mytitle{
+  	font-family: cursive;
+  }
+
+  .page-footer {
+  	background-color: #424242;
+  }
+
+  .nav-wrapper, nav{
+  	background-color: #424242;
+  }
+
+  .mycontent{
+  	display: flex;
+
+  }
+  .mycodeimage{
+  	  	float:right;
+  	  	display:inline;
+
+  }
+  .content{
+  	margin-left: 50px;
+  }
+
