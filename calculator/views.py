@@ -1,0 +1,40 @@
+from __future__ import unicode_literals
+from django.shortcuts import render
+from django.views.generic import TemplateView
+from django.shortcuts import render , redirect
+from calculator.forms import HomeForm
+
+# Create your views here.
+
+class HomePage(TemplateView):
+	template_name = 'home.html'
+
+	def get(self, request, *args, **kwargs):
+		form = HomeForm()
+		return render(request, self.template_name, {'form':form})
+
+	def post(self, request):
+		form = HomeForm(request.POST)
+		if form.is_valid():
+			text = form.cleaned_data['num1']
+			text2 = form.cleaned_data['num2']
+
+			if 'add' in request.POST:
+				result = text  + text2
+
+			elif 'sub' in request.POST:
+				result = text - text2
+
+			elif 'mul' in request.POST:
+				result = text * text2
+
+			elif 'div' in request.POST:
+				result = text / text2
+
+			elif 'mod' in request.POST:
+				result = text % text2
+
+			form = HomeForm()
+
+		args = {'form':form, 'result':result}
+		return render(request, self.template_name, args)
