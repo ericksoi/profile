@@ -6,10 +6,11 @@
 
   main {
     flex: 1 0 auto;
-    background:url('/static/img/back.jpg');
+    background:url('/static/img/4.gif');
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;   
 
   }
 
@@ -39,23 +40,11 @@
   }
 
  .mycontent{
-    position:fixed;
-    top: 50%;
-    left: 63%;
-    margin-top: -3em; /*set to a negative number 1/2 of your height*/
-    margin-left: -15em; /*set to a negative number 1/2 of your width*/
-    border-radius: 8px;
-    background-color: #f3f3f3;
+
+   	width:500px;
     padding: 1em;
-    color: #aeff62;
+    color: #0f687e;
     font-size: 30px;
-    background:url('/static/img/2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-animation: spin 1s 2 linear;
-}
-@-webkit-keyframes spin {
-    0%  {-webkit-transform: rotate(0deg);}
-    100% {-webkit-transform: rotate(360deg);}  
-    0%  {-webkit-transform: rotate(0deg);}
+    font-family: papyrus;
+    
 }
