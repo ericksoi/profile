@@ -2,6 +2,8 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    overflow: hidden;
+
   }
 
   main {
@@ -31,7 +33,7 @@
 
   }
   .mycodeimage{
-  	  	float:right;
+  	  float:right;
 	  	display:inline;
 
   }
@@ -41,7 +43,7 @@
 
  .mycontent{
 
-   	width:500px;
+   	max-width:500px;
     padding: 1em;
     color: #0f687e;
     font-size: 30px;
