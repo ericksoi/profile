@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Explore</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="{% static 'css/projects.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href=home class="brand-logo center">Projects</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="home">Home</a></li>
+        <li><a href="#!">Link</a></li>
+      </ul>
+    </div>
+  </nav>
+<main>
+	<div class="row">
+
+			{% block projects %}
+			{% endblock %}
+	</div>
+</main>
+</body>
+</html>

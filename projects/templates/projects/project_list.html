@@ -1,0 +1,24 @@
+
+{% extends 'projects/base.html' %}
+
+{% block projects %}
+	{% for post in project %}
+		<a href={{ post.appname }} style="text-decoration:none; color:black;">
+		    <div class="col s12 m6" style="max-width: 550px; padding-right: 30px">
+		      <div class="card valign center">
+		      	<span class="card-title " style="font-size:30px; font-weight: bold; align-content: center;" >{{ post.subtitle }}</span>
+		        <div class="card-image">
+		          <img src="{{ post.image.url }}" height="300" ;>
+		          
+		         
+		        </div>
+		        <div class="card-content">
+		          <p class="paragraph1">{{ post.content }}</p>
+		        </div>
+		      </div>
+		    </div>
+		</a>
+
+
+	{% endfor %}
+{% endblock %}
